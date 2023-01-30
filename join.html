@@ -4,9 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>네이버 회원가입</title>
+    <link rel="stylesheet" href="./form.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/928e1c518a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header class="globel-header">
+            <div class="logo-box">
+                <h1 class="logo">
+                    <a href="http://www.naver.com"><img src="./images/logo.png" alt="logo"></a>
+                </h1>
+            </div>
+        </header>
+        <main class="main-form">
+            <section>
+                <div class="container">
+                    <div class="join-content">
+                        <div class="row-group">
+                            <div class="join-row">
+                                <label for="">
+                                    <h3>아이디</h3>
+                                </label>
+                                <span class="ps-box">
+                                    <input type="text" name="userid" id="id" class="int" title="ID" maxlength="20">
+                                    <span class="step-url">@naver.com</span>
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="join-row">
+                            <div class="row-group">
+                                <label for="">
+                                    <h3>비밀번호</h3>
+                                </label>
+                                <span class="ps-box">
+                                    <input type="text" name="userid" id="pw" class="int" title="pw" maxlength="20">
+                                    <span class="step-img"><img src="./images/m_icon_pw_step_01.png" alt="비밀번호"></span>
+                                </span>
+                            </div>
+                            <div class="join-row">
+                                <div class="row-group">
+                                    <label for="">
+                                        <h3>비밀번호 재확인</h3>
+                                    </label>
+                                    <span class="ps-box">
+                                        <input type="text" name="userpw" id="pw" class="int" title="pw" maxlength="20">
+                                        <span class="step-img"><img src="./images/m_icon_pw_step_02.png" alt="비밀번호 재확인"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        
+            <section>
+                <form action="">
+                    <div class="user-row-group">
+                        <div class="user-join-row"></div>
+                        <label for="">
+                            <h3 class="row-txt">이름</h3>
+                        </label>
+                        <span class="ps-box">
+                            <input type="text" name="username" id="name" class="int" title="name" maxlength="20">
+                        </span>
+                    </div>
+                    </div>
+                </form>
+
+                <form action="">
+                    <label class="bir-box" for="">
+                        <div class="bir-list">
+                        <h3 class="row-txt">생년월일</h3>
+                        <input type="text" class="bir-txt" name="year" placeholder="년(4)" maxlength="4">
+
+                        <select class="bir-txt" name="month" id="month">
+                            <option value="월">월</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        
+                        <input type="text" class="bir-txt" name="day" placeholder="일" maxlength="2">
+                    </div>
+                    </label>
+                </form>
+                <form action="">
+                    <label for="">
+                        <div class="sex-list">
+                            <h3 class="row-txt">성별</h3>
+                            <label for=""><input class="radiochk" type="radio" name="sex" placeholder="">남자</label>
+                            <label for=""><input class="radiochk" type="radio" name="sex" placeholder="">여자</label>
+                            <label for=""><input class="radiochk" type="radio" name="sex" placeholder="">선택없음</label>
+                        </div>
+                    </label>
+                </form>
+
+                <form action="">
+                    <label for="">
+                        <div class="email-box">
+                            <h3 class="row-txt">본인 확인 메일<span class="text-primary">(선택)</span></h3>
+                            <div class="email-box-list">
+                                <input class="email-box-item" type="email" name="email" placeholder="선택입력">
+                            </div>
+                        </div>
+                    </label>
+                </form>    
+            </section>
+            <section>
+                <form action="">
+                    <label for="">
+                        <div class="tell-box">
+                            <h3 class="row-txt">
+                                전화번호
+                            </h3>
+                            <select name="" id="tell-list">
+                                <option value="대한민국">대한민국 +82</option>
+                                <option value="니카라과">니카라과 +505</option>
+                                <option value="니제르">니제르 +227</option>
+                                <option value="덴마크">덴마크 +45</option>
+                            </select>
+                        </div>
+            
+                        <div class="num-box tell-box">
+                            <input type="tel" class="tel-num" name="tel" placeholder="전화번호 입력">
+                            <button class="tel-btn" type="button">인증번호 받기</button>
+                            <input type="text" class="tel-box" name="tel-box" placeholder="인증번호 입력하세요.">
+                        </div>
+                    </label>
+                </form>
+
+                <form action="">
+                    <label for="">
+                        <div class="btn-area">
+                            <button class="btn-box" type="button">가입하기</button>
+                        </div>
+                    </label>
+                </form>
+            </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-box">
+                <div class="footer-box-list">
+                <p><a href="">이용약관</a>
+                    <a href="">개인정보 처리방침</a>
+                    <a href="">책임의 한계와 법적고지</a>
+                    <a href="">회원정보 고객센터</a>
+                </p>
+
+                <div class="box-list-bottom">
+                    <p class="footer-logo">
+                        <a href="https://www.navercorp.com/" target="_blank">
+                            <img src="./images/logo.png" alt="footer-logo">
+                        </a>
+                    </p>
+                    <p class="footer-box-txt">Copyright 
+                        <a href="https://www.navercorp.com/">NAVER Corp.</a>
+                        All Rights Reserved.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </footer>
+        </section>
+        <script src="./js/form.js"></script>
+    </div>
 </body>
 </html>
